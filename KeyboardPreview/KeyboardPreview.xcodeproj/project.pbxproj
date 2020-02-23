@@ -13,6 +13,7 @@
 		DCDAF97C2402AFB0005087FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDAF97A2402AFB0005087FE /* Main.storyboard */; };
 		DCDAF97E2402AFB5005087FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDAF97D2402AFB5005087FE /* Assets.xcassets */; };
 		DCDAF9812402AFB5005087FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDAF97F2402AFB5005087FE /* LaunchScreen.storyboard */; };
+		DCDAF9892402D799005087FE /* ContentTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAF9882402D799005087FE /* ContentTypeSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DCDAF97D2402AFB5005087FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCDAF9802402AFB5005087FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCDAF9822402AFB5005087FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCDAF9882402D799005087FE /* ContentTypeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTypeSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DCDAF9742402AFB0005087FE /* AppDelegate.swift */,
 				DCDAF9762402AFB0005087FE /* SceneDelegate.swift */,
 				DCDAF9782402AFB0005087FE /* ViewController.swift */,
+				DCDAF9882402D799005087FE /* ContentTypeSelectionViewController.swift */,
 				DCDAF97A2402AFB0005087FE /* Main.storyboard */,
 				DCDAF97D2402AFB5005087FE /* Assets.xcassets */,
 				DCDAF97F2402AFB5005087FE /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCDAF9792402AFB0005087FE /* ViewController.swift in Sources */,
+				DCDAF9892402D799005087FE /* ContentTypeSelectionViewController.swift in Sources */,
 				DCDAF9752402AFB0005087FE /* AppDelegate.swift in Sources */,
 				DCDAF9772402AFB0005087FE /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S793P9ET2W;
 				INFOPLIST_FILE = KeyboardPreview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S793P9ET2W;
 				INFOPLIST_FILE = KeyboardPreview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

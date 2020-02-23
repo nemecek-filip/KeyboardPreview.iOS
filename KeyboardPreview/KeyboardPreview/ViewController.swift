@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var keyboardTypePicker: UIPickerView!
     @IBOutlet var returnKeyPicker: UIPickerView!
     
+    private var textContentType: TextContentType?
+    
     private let keyboardTypes: [(type: UIKeyboardType, name: String)] = [
         (.default, "Default"),
         (.asciiCapable, "ASCII Capable"),
@@ -54,12 +56,50 @@ class ViewController: UIViewController {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
         view.addGestureRecognizer(tap)
+        
+        textField.textContentType = nil
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ContentTypeSegue" {
+            guard let nvc = segue.destination as? UINavigationController else {
+                preconditionFailure()
+            }
+            
+            guard let contentTypeViewController = nvc.topViewController as? ContentTypeSelectionViewController else {
+                preconditionFailure()
+            }
+            
+            contentTypeViewController.didSelectContentType = textContentTypeSelected
+            contentTypeViewController.previousContentType = textContentType
+        }
     }
     
     @objc func viewTapped() {
         view.endEditing(true)
     }
 
+    @IBAction func lookSegmentedControlValueChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            textField.keyboardAppearance = .default
+        case 1:
+            textField.keyboardAppearance = .light
+        case 2:
+            textField.keyboardAppearance = .dark
+        default:
+            preconditionFailure("Cannot happen")
+        }
+        
+        textField.reloadInputViews()
+    }
+    
+    func textContentTypeSelected(_ contentType: TextContentType?) {
+        textContentType = contentType
+        textField.textContentType = contentType?.type
+        textField.reloadInputViews()
+    }
+    
 
 }
 

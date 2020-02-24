@@ -1,0 +1,21 @@
+
+/* Class = "UINavigationItem"; title = "Content Type"; ObjectID = "04N-3E-ywm"; */
+"04N-3E-ywm.title" = "Content Type";
+
+/* Class = "UISegmentedControl"; 0a2-b9-ktn.segmentTitles[0] = "Default"; ObjectID = "0a2-b9-ktn"; */
+"0a2-b9-ktn.segmentTitles[0]" = "Default";
+
+/* Class = "UISegmentedControl"; 0a2-b9-ktn.segmentTitles[1] = "Light"; ObjectID = "0a2-b9-ktn"; */
+"0a2-b9-ktn.segmentTitles[1]" = "Light";
+
+/* Class = "UISegmentedControl"; 0a2-b9-ktn.segmentTitles[2] = "Dark"; ObjectID = "0a2-b9-ktn"; */
+"0a2-b9-ktn.segmentTitles[2]" = "Dark";
+
+/* Class = "UINavigationItem"; title = "Keyboard Preview"; ObjectID = "ASj-f3-7mw"; */
+"ASj-f3-7mw.title" = "Keyboard Preview";
+
+/* Class = "UIButton"; normalTitle = "Content Type"; ObjectID = "dSu-fh-AmZ"; */
+"dSu-fh-AmZ.normalTitle" = "Content Type";
+
+/* Class = "UITextField"; placeholder = "Tap to open keyboard"; ObjectID = "ejb-Gy-eUk"; */
+"ejb-Gy-eUk.placeholder" = "Tap to open keyboard";

@@ -10,14 +10,7 @@ import UIKit
 
 typealias TextContentType = (type: UITextContentType, name: String)
 
-class ContentTypeSelectionViewController: UITableViewController {
-    
-    
-    
-    var didSelectContentType: ((TextContentType?) -> Void)?
-    
-    var previousContentType: TextContentType?
-    
+class ContentTypeSelectionViewController: UITableViewController {    
     private let nameContentTypes: [TextContentType] = [
         (.name, "Name"),
         (.namePrefix, "Name Prefix"),
@@ -46,21 +39,35 @@ class ContentTypeSelectionViewController: UITableViewController {
         (.postalCode, "Postal Code")
     ]
     
+    private let contactContentTypes: [TextContentType] = [
+        (.telephoneNumber, "Telephone Number"),
+        (.emailAddress, "Email Address")
+    ]
+    
+    private let miscContentTypes: [TextContentType] = [
+        (.URL, "URL"),
+        (.creditCardNumber, "Credit Card Number")
+    ]
+    
+    private let loginContentTypes: [TextContentType] = [
+        (.username, "Username"),
+        (.password, "Password"),
+        (.newPassword, "New Password"),
+        (.oneTimeCode, "One Time Code")
+    ]
+    
     lazy var sections = [
         Section(contentTypes: nil),
-        Section(contentTypes: nameContentTypes)
+        Section(contentTypes: nameContentTypes),
+        Section(contentTypes: addressContentTypes),
+        Section(contentTypes: contactContentTypes),
+        Section(contentTypes: miscContentTypes),
+        Section(contentTypes: loginContentTypes),
     ]
     
-    private let contentTypes: [UITextContentType] = [
+    var didSelectContentType: ((TextContentType?) -> Void)?
     
-    
-    .jobTitle,
-    .organizationName,
-    
-    
-    
-    
-    ]
+    var previousContentType: TextContentType?
 
     override func viewDidLoad() {
         super.viewDidLoad()

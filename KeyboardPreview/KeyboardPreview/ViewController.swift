@@ -100,6 +100,9 @@ class ViewController: UIViewController {
         textField.reloadInputViews()
     }
     
+    @IBAction func languageButtonTapped(_ sender: Any) {
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+    }   
 
 }
 

@@ -26,6 +26,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4l-U0-uMY">
                                 <rect key="frame" x="15" y="157" width="384" height="130"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPo-94-iYp">
+                                        <rect key="frame" x="0.0" y="10" width="95.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWY-K9-OaK">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="130"/>
                                     </pickerView>
@@ -34,22 +40,32 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="vWY-K9-OaK" secondAttribute="bottom" id="20j-7T-t1H"/>
                                     <constraint firstAttribute="trailing" secondItem="vWY-K9-OaK" secondAttribute="trailing" id="AMI-4b-w11"/>
+                                    <constraint firstItem="cPo-94-iYp" firstAttribute="top" secondItem="L4l-U0-uMY" secondAttribute="top" constant="10" id="QSQ-RZ-bws"/>
                                     <constraint firstItem="vWY-K9-OaK" firstAttribute="top" secondItem="L4l-U0-uMY" secondAttribute="top" id="UXG-Kh-aFY"/>
                                     <constraint firstAttribute="leading" secondItem="vWY-K9-OaK" secondAttribute="leading" id="gu0-7O-DDP"/>
+                                    <constraint firstItem="cPo-94-iYp" firstAttribute="leading" secondItem="L4l-U0-uMY" secondAttribute="leading" id="m2g-aE-TSr"/>
                                     <constraint firstAttribute="height" constant="130" id="ngk-If-F5y"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ota-Lb-UF9">
-                                <rect key="frame" x="0.0" y="287" width="414" height="130"/>
+                                <rect key="frame" x="15" y="287" width="384" height="130"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogw-pi-bBz">
+                                        <rect key="frame" x="0.0" y="10" width="68" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-wD-bff">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="130"/>
                                     </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Wgj-wD-bff" secondAttribute="trailing" id="4aQ-FS-5sV"/>
+                                    <constraint firstItem="ogw-pi-bBz" firstAttribute="top" secondItem="ota-Lb-UF9" secondAttribute="top" constant="10" id="Bxq-19-mvf"/>
                                     <constraint firstItem="Wgj-wD-bff" firstAttribute="leading" secondItem="ota-Lb-UF9" secondAttribute="leading" id="I5C-d2-sfB"/>
+                                    <constraint firstItem="ogw-pi-bBz" firstAttribute="leading" secondItem="ota-Lb-UF9" secondAttribute="leading" id="KPJ-cO-iVO"/>
                                     <constraint firstItem="Wgj-wD-bff" firstAttribute="top" secondItem="ota-Lb-UF9" secondAttribute="top" id="MOQ-Be-hV5"/>
                                     <constraint firstAttribute="height" constant="130" id="fCj-7z-qp3"/>
                                     <constraint firstAttribute="bottom" secondItem="Wgj-wD-bff" secondAttribute="bottom" id="flx-ub-4oF"/>
@@ -87,10 +103,10 @@
                             <constraint firstItem="ota-Lb-UF9" firstAttribute="top" secondItem="L4l-U0-uMY" secondAttribute="bottom" id="QeS-6b-iif"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0a2-b9-ktn" secondAttribute="trailing" constant="15" id="TDl-kc-cqe"/>
                             <constraint firstItem="dSu-fh-AmZ" firstAttribute="centerY" secondItem="ejb-Gy-eUk" secondAttribute="centerY" id="UGC-gN-daL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ota-Lb-UF9" secondAttribute="trailing" id="Ymp-qF-Cw7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ota-Lb-UF9" secondAttribute="trailing" constant="15" id="Ymp-qF-Cw7"/>
                             <constraint firstItem="0a2-b9-ktn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="bd1-VW-caO"/>
                             <constraint firstItem="ejb-Gy-eUk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="evE-bC-y8v"/>
-                            <constraint firstItem="ota-Lb-UF9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f6v-qf-GEb"/>
+                            <constraint firstItem="ota-Lb-UF9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="f6v-qf-GEb"/>
                             <constraint firstItem="ejb-Gy-eUk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oAy-rj-1AA"/>
                             <constraint firstItem="L4l-U0-uMY" firstAttribute="top" secondItem="ejb-Gy-eUk" secondAttribute="bottom" constant="5" id="xMl-3p-4hU"/>
                         </constraints>

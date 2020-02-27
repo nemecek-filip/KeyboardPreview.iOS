@@ -49,15 +49,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        keyboardTypePicker.dataSource = self
-        keyboardTypePicker.delegate = self
-        returnKeyPicker.dataSource = self
-        returnKeyPicker.delegate = self
+        setupPickers()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
         view.addGestureRecognizer(tap)
         
         textField.textContentType = nil
+        
+        textField.becomeFirstResponder()
+        
+        dummyNetworkCallToActivateSettingsEntry()
+    }
+    
+    private func setupPickers() {
+        keyboardTypePicker.dataSource = self
+        keyboardTypePicker.delegate = self
+        returnKeyPicker.dataSource = self
+        returnKeyPicker.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -102,8 +110,18 @@ class ViewController: UIViewController {
     
     @IBAction func languageButtonTapped(_ sender: Any) {
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
-    }   
-
+    }
+    
+    func dummyNetworkCallToActivateSettingsEntry() {
+        URLSession.shared.dataTask(with: URL(string: "https://apple.com")!) { (data, response, error) in
+            guard let data = data else { return }
+            
+            if let text = String(data: data, encoding: .utf8) {
+                print(text)
+            }
+            
+        }.resume()
+    }
 }
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {

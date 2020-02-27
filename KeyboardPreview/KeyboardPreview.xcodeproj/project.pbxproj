@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC12000E2404467E0036BB3C /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC12000D2404467E0036BB3C /* Localization.strings */; };
+		DC3AD23324083550005A4F27 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3AD23224083550005A4F27 /* MapKit.framework */; };
 		DCDAF9752402AFB0005087FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAF9742402AFB0005087FE /* AppDelegate.swift */; };
 		DCDAF9772402AFB0005087FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAF9762402AFB0005087FE /* SceneDelegate.swift */; };
 		DCDAF9792402AFB0005087FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAF9782402AFB0005087FE /* ViewController.swift */; };
@@ -37,7 +38,8 @@
 		DC12001E240447600036BB3C /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DC12001F2404476E0036BB3C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		DC1200202404476E0036BB3C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		DCDAF9712402AFB0005087FE /* KeyboardPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3AD23224083550005A4F27 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DCDAF9712402AFB0005087FE /* KeyView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDAF9742402AFB0005087FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDAF9762402AFB0005087FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DCDAF9782402AFB0005087FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,24 +55,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3AD23324083550005A4F27 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC3AD23124083550005A4F27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC3AD23224083550005A4F27 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCDAF9682402AFB0005087FE = {
 			isa = PBXGroup;
 			children = (
 				DCDAF9732402AFB0005087FE /* KeyboardPreview */,
 				DCDAF9722402AFB0005087FE /* Products */,
+				DC3AD23124083550005A4F27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		DCDAF9722402AFB0005087FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCDAF9712402AFB0005087FE /* KeyboardPreview.app */,
+				DCDAF9712402AFB0005087FE /* KeyView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +120,7 @@
 			);
 			name = KeyboardPreview;
 			productName = KeyboardPreview;
-			productReference = DCDAF9712402AFB0005087FE /* KeyboardPreview.app */;
+			productReference = DCDAF9712402AFB0005087FE /* KeyView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -348,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FN.KeyboardPreview;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeyView;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,7 +379,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FN.KeyboardPreview;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KeyView;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

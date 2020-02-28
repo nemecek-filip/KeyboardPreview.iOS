@@ -112,13 +112,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Keyboard Preview" id="ASj-f3-7mw">
-                        <barButtonItem key="rightBarButtonItem" title="Language" id="40M-OC-9Kw">
-                            <connections>
-                                <action selector="languageButtonTapped:" destination="BYZ-38-t0r" id="ELl-T6-XkU"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Keyboard Preview" id="ASj-f3-7mw"/>
                     <connections>
                         <outlet property="keyboardTypePicker" destination="vWY-K9-OaK" id="7Ev-nH-uiG"/>
                         <outlet property="returnKeyPicker" destination="Wgj-wD-bff" id="WrL-bt-jiR"/>

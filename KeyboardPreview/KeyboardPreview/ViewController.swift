@@ -57,8 +57,6 @@ class ViewController: UIViewController {
         textField.textContentType = nil
         
         textField.becomeFirstResponder()
-        
-        dummyNetworkCallToActivateSettingsEntry()
     }
     
     private func setupPickers() {
@@ -107,21 +105,6 @@ class ViewController: UIViewController {
         textField.textContentType = contentType?.type
         textField.reloadInputViews()
     }
-    
-    @IBAction func languageButtonTapped(_ sender: Any) {
-        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
-    }
-    
-    func dummyNetworkCallToActivateSettingsEntry() {
-        URLSession.shared.dataTask(with: URL(string: "https://apple.com")!) { (data, response, error) in
-            guard let data = data else { return }
-            
-            if let text = String(data: data, encoding: .utf8) {
-                print(text)
-            }
-            
-        }.resume()
-    }
 }
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -153,7 +136,6 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         }
         
         textField.reloadInputViews()
-    }
-    
+    }    
 }
 

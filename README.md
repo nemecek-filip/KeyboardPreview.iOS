@@ -9,4 +9,6 @@ I wanted faster way to try out different available keyboard types, return keys a
 
 With **Keyboard Preview** you can quickly preview all available options on single screen and can check out, how the keyboard looks like for different options.
 
+PS: I also have [small app](https://github.com/nemecek-filip/DynamicType-ReferenceApp) to preview Dynamic Type fonts.
+
 ![Quick preview](Images/preview-image.png)

@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://github.com/nemecek-filip/DynamicType-ReferenceApp">Dynamic Type</a> &bull;
+  <a href="https://github.com/nemecek-filip/EKEventKit.Example">Event Kit</a> &bull;
+  <a href="https://github.com/nemecek-filip/QLPreviewController.Example">Quick Look</a> &bull;
+  <a href="https://github.com/nemecek-filip/App-ideas">App Ideas</a> &bull;
+  <b>Keyboard Preview</b> 	
+</p>
+
+----
 # Keyboard Preview
 
 ![](Images/mini-icon.png)

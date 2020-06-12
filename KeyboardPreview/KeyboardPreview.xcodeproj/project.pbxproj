@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC12000E2404467E0036BB3C /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC12000D2404467E0036BB3C /* Localization.strings */; };
 		DC3AD23324083550005A4F27 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3AD23224083550005A4F27 /* MapKit.framework */; };
 		DCDAF9752402AFB0005087FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAF9742402AFB0005087FE /* AppDelegate.swift */; };
 		DCDAF9772402AFB0005087FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAF9762402AFB0005087FE /* SceneDelegate.swift */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC12000D2404467E0036BB3C /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
 		DC3AD23224083550005A4F27 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DCDAF9712402AFB0005087FE /* KeyView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDAF9742402AFB0005087FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				DCDAF97D2402AFB5005087FE /* Assets.xcassets */,
 				DCDAF97F2402AFB5005087FE /* LaunchScreen.storyboard */,
 				DCDAF9822402AFB5005087FE /* Info.plist */,
-				DC12000D2404467E0036BB3C /* Localization.strings */,
 			);
 			path = KeyboardPreview;
 			sourceTree = "<group>";
@@ -144,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCDAF9812402AFB5005087FE /* LaunchScreen.storyboard in Resources */,
-				DC12000E2404467E0036BB3C /* Localization.strings in Resources */,
 				DCDAF97E2402AFB5005087FE /* Assets.xcassets in Resources */,
 				DCDAF97C2402AFB0005087FE /* Main.storyboard in Resources */,
 			);
